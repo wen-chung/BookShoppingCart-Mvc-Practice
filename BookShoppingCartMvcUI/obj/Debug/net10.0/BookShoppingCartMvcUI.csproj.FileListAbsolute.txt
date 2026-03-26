@@ -425,3 +425,4 @@
 /Users/wangwenjun/Desktop/E-commerce Application Using .NET Core MVC (9), Entity framework core and SQL Server - .NET Project/BookShoppingCartMvcUI/obj/Debug/net10.0/scopedcss/Views/Shared/_AdminLayout.cshtml.rz.scp.css
 /Users/wangwenjun/Desktop/E-commerce Application Using .NET Core MVC (9), Entity framework core and SQL Server - .NET Project/BookShoppingCartMvcUI/obj/Debug/net10.0/compressed/ep2g2kc25q-{0}-mcpv3umv1f-mcpv3umv1f.gz
 /Users/wangwenjun/Desktop/E-commerce Application Using .NET Core MVC (9), Entity framework core and SQL Server - .NET Project/BookShoppingCartMvcUI/obj/Debug/net10.0/compressed/rfjtw5pc46-{0}-mcpv3umv1f-mcpv3umv1f.gz
+/Users/wangwenjun/Desktop/E-commerce Application Using .NET Core MVC (9), Entity framework core and SQL Server - .NET Project/BookShoppingCartMvcUI/obj/Debug/net10.0/BookShoppingCartMvcUI.sourcelink.json
