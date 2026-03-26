@@ -26,7 +26,7 @@
 
 6.Genre
 
-![Genre](./screenshots/Genre.png)
+![Genre](./screenshots/Genres.png)
 
 7.Books
 
