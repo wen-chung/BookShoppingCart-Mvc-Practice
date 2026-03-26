@@ -1,0 +1,79 @@
+﻿@using Microsoft.EntityFrameworkCore.Metadata.Internal
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@model IEnumerable<Order>
+
+@{
+    ViewData["Title"] = "GetUserCart";
+}
+
+<div style="width:100%" class="mt-2">
+    <a href="/Identity/Account/Manage" class="btn btn-primary my-2">Back</a>
+   
+   <h4>My Orders</h4>
+    @if (Model != null && Model.Count()> 0)
+    {
+<table class="table table-striped">
+    <tr>
+        <th>OrderDate</th>
+        <th>OrderStatus</th>
+    </tr>
+    @foreach (var Order in Model) {
+                <tr>
+                    <td>@Order.CreateDate.ToString("MM-dd-yyyy")</td>
+                    <td>@Order.OrderStatus.StatusName</td>
+                </tr>
+                
+                if (Order.OrderDetail != null && Order.OrderDetail.Count() > 0) { 
+                   <tr>
+                    <td>
+                    <table class="table table-bordered">
+                        <tr>
+                            <td>
+                                Total:
+                            </td>
+                            <td>
+                                 @(Order.OrderDetail.Select(item=>item.Book.Price*item.Quantity).Sum())
+                            </td>
+                        </tr>
+            <tr>
+                <th>Book</th>
+                <th>Image</th>
+                <th>Genre</th>
+                <th>Unit Price(INR)</th>
+                <th>Total Price </th>
+            </tr>
+            @foreach (var item in Order.OrderDetail)
+            {
+                <tr> 
+                    <td>@item.Book.BookName</td>
+                    <td>
+                        @if (!string.IsNullOrEmpty(item.Book.Image))
+                        {
+                            <img src="/Image/@item.Book.Image" alt="" style="width: 80px;height: 100px;">
+                        }
+                        else { 
+                            <img src="/Image/@(item.Book.GenreId).jpg" alt="" style="width: 80px;height: 100px;">
+                        }
+                    </td>
+                    <td>@item.Book.Genre.GenreName</td>
+                    <td>@item.Book.Price X @item.Quantity</td>
+                    <td>@(item.Book.Price * item.Quantity)</td>
+                </tr>
+            }
+        </table>
+                    </td>
+                   </tr>
+                }
+            }
+        </table>
+
+
+    }
+    else { 
+        <h5>No Orders</h5>
+    }
+</div>
+
+ 

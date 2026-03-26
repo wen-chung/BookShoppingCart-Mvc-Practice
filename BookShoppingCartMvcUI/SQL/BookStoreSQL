@@ -1,0 +1,133 @@
+SELECT * from Genre;
+
+select * from Book;
+
+-----------insert Genre basic data--------------------
+/*INSERT into Genre(GenreName)
+VALUES('Adventure');
+
+INSERT into Genre(GenreName)
+VALUES('Science fiction');
+
+INSERT into Genre(GenreName)
+VALUES('Romance');
+
+INSERT into Genre(GenreName)
+VALUES('Horror');
+
+--------------insert Book while Genreid is 1-------------------------
+
+INSERT into Book(BookName,Price,GenreId,AuthorName)
+VALUEs('The Call of the Wild',500,1,'Jack London');
+
+INSERT into Book(BookName,Price,GenreId,AuthorName)
+VALUEs('Odyssey',500,1,'Homer');
+
+INSERT into Book(BookName,Price,GenreId,AuthorName)
+VALUEs('Into the Wild',500,1,'Jon Krakauer');
+
+INSERT into Book(BookName,Price,GenreId,AuthorName)
+VALUEs('Treasure Island',500,1,'Robert Louis Stevenson');
+
+INSERT into Book(BookName,Price,GenreId,AuthorName)
+VALUEs('The Hobbit',500,1,'J. R. R. Tolkien');
+
+INSERT into Book(BookName,Price,GenreId,AuthorName)
+VALUEs('Around the World in Eighty Days',500,1,'Jules Verne');
+
+INSERT into Book(BookName,Price,GenreId,AuthorName)
+VALUEs('Into Thin Air',500,1,'Jon Krakauer');
+
+--------------insert Book while Genreid is 2-------------------------
+
+INSERT into Book(BookName,Price,GenreId,AuthorName)
+VALUEs('Frankenstein',500,2,'Mary Shelley');
+
+INSERT into Book(BookName,Price,GenreId,AuthorName)
+VALUEs('Foundation',500,2,'Isaac Asimov');
+
+INSERT into Book(BookName,Price,GenreId,AuthorName)
+VALUEs('The Stars My Destination',500,2,'Alfred Bester');
+
+INSERT into Book(BookName,Price,GenreId,AuthorName)
+VALUEs('Solaris',500,2,'Stanislaw Lem');
+
+INSERT into Book(BookName,Price,GenreId,AuthorName)
+VALUEs('The Moon is a Harsh Mistress',500,2,'Robert Heinlein');
+
+INSERT into Book(BookName,Price,GenreId,AuthorName)
+VALUEs('Ice',500,2,'Anna Kavan');
+
+INSERT into Book(BookName,Price,GenreId,AuthorName)
+VALUEs('Kindred',500,2,'JOctavia E. Butler');
+
+--------------insert Book while Genreid is 3-------------------------
+
+INSERT into Book(BookName,Price,GenreId,AuthorName)
+VALUEs('Outlander',500,3,'Diana Gabaldon');
+
+INSERT into Book(BookName,Price,GenreId,AuthorName)
+VALUEs('Red, White & Royal Blue',500,3,'Casey McQuiston');
+
+INSERT into Book(BookName,Price,GenreId,AuthorName)
+VALUEs('Seven Days in June',500,3,'Tia Williams');
+
+INSERT into Book(BookName,Price,GenreId,AuthorName)
+VALUEs('The Notebook',500,3,'Nicholas Sparks');
+
+INSERT into Book(BookName,Price,GenreId,AuthorName)
+VALUEs('The Hating Game: A Novel',500,3,'Sally Thorne');
+
+INSERT into Book(BookName,Price,GenreId,AuthorName)
+VALUEs('People We Meet on Vacation',500,3,'Emily Henry');
+
+--------------insert Book while Genreid is 4-------------------------
+
+INSERT into Book(BookName,Price,GenreId,AuthorName)
+VALUEs('Dracula',500,4,'Bram Stoker');
+
+INSERT into Book(BookName,Price,GenreId,AuthorName)
+VALUEs('The Haunting of Hill House',500,4,'Shirley Jackson');
+
+INSERT into Book(BookName,Price,GenreId,AuthorName)
+VALUEs('The Shining',500,4,'Stephen King');
+
+INSERT into Book(BookName,Price,GenreId,AuthorName)
+VALUEs('It',500,4,'Stephen King');
+
+INSERT into Book(BookName,Price,GenreId,AuthorName)
+VALUEs('The Exorcist',500,4,'William Peter Blatty');
+
+INSERT into Book(BookName,Price,GenreId,AuthorName)
+VALUEs('House of Leaves',500,4,'Mark Z. Danielewski');*/
+
+--------------------- Search ------------------------------------
+
+select * from ShoppingCart;
+
+select * from CartDetail;
+
+UPDATE CartDetail set ShoppingCartId = 1,BookId=2
+where id = 1;
+
+SELECT * from  AspNetUsers;
+SELECT * from  AspNetUserRoles;
+SELECT * from  AspNetUserLogins;
+select * from AspNetUserClaims;
+
+select * from Genre;
+
+
+SELECT * from  AspNetRoles;
+
+SELECT * from  AspNetUserTokens;
+
+select * from [Order];
+SELECT * from OrderDetail;
+
+SELECT * from OrderStatus;
+
+select * from Book a JOIN genre b on a.GenreId = b.Id; 
+
+select * from Book where [Image] is not null;
+

@@ -1,0 +1,140 @@
+/* /Views/Shared/_AdminLayout.cshtml.rz.scp.css */
+body[b-ax0bxdqes5] {
+    padding: 0;
+    margin: 0;
+}
+
+*[b-ax0bxdqes5] {
+    scrollbar-width: thin;
+    scrollbar-color: #486888 #f1f1f1;
+}
+
+    *[b-ax0bxdqes5]::-webkit-scrollbar {
+        width: 12px; /* Width of the scrollbar */
+    }
+
+    *[b-ax0bxdqes5]::-webkit-scrollbar-track {
+        background: #f1f1f1; /* Color of the track */
+    }
+
+    *[b-ax0bxdqes5]::-webkit-scrollbar-thumb {
+        background: #486888; /* Color of the thumb */
+        border-radius: 20px; /* Rounded corners of the thumb */
+    }
+
+        *[b-ax0bxdqes5]::-webkit-scrollbar-thumb:hover {
+            background: #486888; /* Color of the thumb on hover */
+        }
+
+.main-contaier[b-ax0bxdqes5] {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+}
+
+.sidenav[b-ax0bxdqes5] {
+    height: 100%;
+    width: 250px;
+    background-color: #2c3e50;
+    padding-top: 15px;
+}
+
+.navigation-link[b-ax0bxdqes5] {
+    text-decoration: none;
+    font-size: 17px;
+    color: #ffffff;
+    display: block;
+}
+
+.sidenav a:hover[b-ax0bxdqes5] {
+    background-color: #476584;
+    color: #ffffff !important;
+}
+
+.sidenav a[b-ax0bxdqes5] {
+    padding: 10px 15px;
+}
+
+.right-panel[b-ax0bxdqes5] {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    overflow-y: auto;
+}
+
+.nav-bar[b-ax0bxdqes5] {
+    background-color: #486888;
+    color: #ffffff;
+    padding: 10px 20px;
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-actions[b-ax0bxdqes5] {
+    display: flex;
+    gap: 5px;
+}
+
+    .nav-actions button[b-ax0bxdqes5] {
+        border: none;
+        background: none;
+    }
+
+        .nav-actions a:hover[b-ax0bxdqes5],
+        .nav-actions button:hover[b-ax0bxdqes5] {
+            color: rgb(241, 241, 241);
+        }
+
+.content[b-ax0bxdqes5] {
+    padding: 20px;
+}
+/* /Views/Shared/_Layout.cshtml.rz.scp.css */
+/* Please see documentation at https://learn.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+
+a.navbar-brand[b-srrnrmlngk] {
+  white-space: normal;
+  text-align: center;
+  word-break: break-all;
+}
+
+a[b-srrnrmlngk] {
+  color: #0077cc;
+}
+
+.btn-primary[b-srrnrmlngk] {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+.nav-pills .nav-link.active[b-srrnrmlngk], .nav-pills .show > .nav-link[b-srrnrmlngk] {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+.border-top[b-srrnrmlngk] {
+  border-top: 1px solid #e5e5e5;
+}
+.border-bottom[b-srrnrmlngk] {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow[b-srrnrmlngk] {
+  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy[b-srrnrmlngk] {
+  font-size: 1rem;
+  line-height: inherit;
+}
+
+.footer[b-srrnrmlngk] {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  white-space: nowrap;
+  line-height: 60px;
+}
