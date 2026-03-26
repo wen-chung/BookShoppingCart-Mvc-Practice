@@ -1,4 +1,5 @@
 #書店購物網站練習
+課程影片：[Build a Full E-commerce Application Using .NET Core 10, SQL Server 2025, MVC | Complete Tutorial](https://youtu.be/_NzPJSofid8?si=jHuiACNd3dxzT1Go)
 
 ##畫面截圖
 
