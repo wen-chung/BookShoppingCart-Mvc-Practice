@@ -31,7 +31,7 @@
 7.Books
 
 ![Books](./screenshots/Books.png)
-![ADDBooks](./screenshots/ADDBooks.png)
+![AddBooks](./screenshots/AddBooks.png)
 
 8.Top Selling Books
 
